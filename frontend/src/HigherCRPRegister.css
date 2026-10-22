@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+}
+
+.hcrp-register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f6f3;
+  color: #30243a;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.hcrp-register-header {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 7%;
+  background: #fff;
+  border-bottom: 1px solid #eee7ec;
+}
+
+.hcrp-register-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #512b50;
+  font-size: 25px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.hcrp-register-logo-mark {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #572c53;
+  color: #fff;
+  font-size: 22px;
+}
+
+.hcrp-register-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.hcrp-register-language {
+  min-width: 110px;
+  padding: 10px 12px;
+  border: 1px solid #e5dce5;
+  border-radius: 9px;
+  background: #fff;
+  color: #423348;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hcrp-register-login-link {
+  color: #75436e;
+  font-size: 12px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.hcrp-register-login-link:hover {
+  text-decoration: underline;
+}
+
+.hcrp-register-container {
+  width: min(1100px, 88%);
+  flex: 1;
+  margin: 42px auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: start;
+  gap: 70px;
+}
+
+.hcrp-register-welcome {
+  padding: 30px 0;
+}
+
+.hcrp-register-eyebrow,
+.hcrp-register-card-label {
+  color: #95617f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hcrp-register-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin: 27px 0 24px;
+  border-radius: 21px;
+  background: #efe4ed;
+  color: #6c3c66;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.hcrp-register-welcome h1 {
+  margin: 0 0 14px;
+  color: #35243c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 3.5vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hcrp-register-welcome h2 {
+  margin: 0 0 18px;
+  color: #75476e;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hcrp-register-welcome > p {
+  max-width: 440px;
+  margin: 0;
+  color: #756a77;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.hcrp-register-benefits {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.hcrp-register-benefits p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  color: #514554;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hcrp-register-benefits p span {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e8dce8;
+  color: #63385f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hcrp-register-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #e7dfe4;
+  color: #725b71;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.hcrp-register-note span {
+  color: #a16a8e;
+  font-size: 20px;
+}
+
+.hcrp-register-card {
+  min-width: 0;
+  padding: 35px 34px 28px;
+  border: 1px solid #eee6ed;
+  border-radius: 19px;
+  background: #fff;
+  box-shadow: 0 18px 55px #39233b0c;
+}
+
+.hcrp-register-card-label {
+  margin-bottom: 12px;
+}
+
+.hcrp-register-card h2 {
+  margin: 0 0 9px;
+  color: #35243c;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.hcrp-register-description {
+  margin: 0 0 27px;
+  color: #847987;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hcrp-register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hcrp-register-card label {
+  margin: 0 0 8px;
+  color: #44374a;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.hcrp-register-card input {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  padding: 0 13px;
+  border: 1px solid #e5dce5;
+  border-radius: 9px;
+  background: #fdfcfd;
+  color: #33263a;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.hcrp-register-card input::placeholder {
+  color: #aaa0ac;
+}
+
+.hcrp-register-card input:focus {
+  border-color: #86527f;
+  box-shadow: 0 0 0 3px #86527f15;
+}
+
+.hcrp-register-card form > input {
+  margin-bottom: 19px;
+}
+
+.hcrp-register-password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.hcrp-register-password-wrap input {
+  padding-right: 65px;
+}
+
+.hcrp-register-password-toggle {
+  position: absolute;
+  right: 12px;
+  border: none;
+  background: transparent;
+  color: #804b78;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.hcrp-register-message {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.hcrp-register-message.success {
+  border: 1px solid #cfe6d4;
+  background: #f0f8f1;
+  color: #28633a;
+}
+
+.hcrp-register-message.error {
+  border: 1px solid #f0caca;
+  background: #fff3f2;
+  color: #a12d35;
+}
+
+.hcrp-register-submit {
+  width: 100%;
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #572c53;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hcrp-register-submit:hover {
+  background: #6d3967;
+  transform: translateY(-1px);
+}
+
+.hcrp-register-submit span {
+  font-size: 18px;
+}
+
+.hcrp-register-bottom {
+  margin: 24px 0 0;
+  color: #7d7280;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.hcrp-register-bottom a {
+  color: #75436e;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.hcrp-register-bottom a:hover {
+  text-decoration: underline;
+}
+
+.hcrp-register-back {
+  display: block;
+  width: fit-content;
+  margin: 22px auto 0;
+  color: #76677a;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.hcrp-register-back:hover {
+  color: #572c53;
+}
+
+.hcrp-register-footer {
+  padding: 20px 6%;
+  border-top: 1px solid #eee7ec;
+  background: #fff;
+  color: #8b7f8d;
+  text-align: center;
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+  .hcrp-register-container {
+    width: min(570px, 90%);
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 28px auto;
+  }
+
+  .hcrp-register-welcome {
+    padding: 8px 0;
+  }
+
+  .hcrp-register-icon {
+    margin: 20px 0;
+  }
+
+  .hcrp-register-welcome h1 {
+    font-size: 35px;
+  }
+
+  .hcrp-register-card {
+    padding: 30px 27px 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hcrp-register-header {
+    padding: 14px 5%;
+    align-items: flex-start;
+  }
+
+  .hcrp-register-logo {
+    gap: 8px;
+    font-size: 20px;
+  }
+
+  .hcrp-register-logo-mark {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+  }
+
+  .hcrp-register-header-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .hcrp-register-language {
+    min-width: 98px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .hcrp-register-login-link {
+    max-width: 160px;
+    text-align: right;
+    font-size: 11px;
+  }
+
+  .hcrp-register-container {
+    width: 90%;
+    margin: 22px auto;
+  }
+
+  .hcrp-register-welcome h1 {
+    font-size: 30px;
+  }
+
+  .hcrp-register-card {
+    padding: 26px 19px 23px;
+    border-radius: 15px;
+  }
+
+  .hcrp-register-card h2 {
+    font-size: 24px;
+  }
+
+  .hcrp-register-footer {
+    padding: 17px 12px;
+    line-height: 1.8;
+  }
+}

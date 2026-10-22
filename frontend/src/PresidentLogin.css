@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+}
+
+.president-login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f6f3;
+  color: #30243a;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.president-login-header {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 7%;
+  background: #ffffff;
+  border-bottom: 1px solid #eee7ec;
+}
+
+.president-login-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #512b50;
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+  text-decoration: none;
+}
+
+.president-logo-mark {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #572c53;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.president-language-select {
+  min-width: 115px;
+  padding: 10px 13px;
+  border: 1px solid #e5dce5;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #423348;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.president-language-select:focus {
+  border-color: #86527f;
+  box-shadow: 0 0 0 3px #86527f18;
+}
+
+.president-login-container {
+  width: min(1100px, 88%);
+  flex: 1;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 0.88fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.president-login-welcome {
+  padding: 20px 0;
+}
+
+.president-welcome-eyebrow {
+  color: #95617f;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 2.1px;
+}
+
+.president-login-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  margin: 27px 0 24px;
+  border-radius: 22px;
+  background: #efe4ed;
+  color: #6c3c66;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.president-login-welcome h1 {
+  max-width: 490px;
+  margin: 0 0 17px;
+  color: #35243c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 3.5vw, 45px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.president-login-welcome h2 {
+  margin: 0 0 15px;
+  color: #75476e;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.president-welcome-description {
+  max-width: 440px;
+  margin: 0;
+  color: #756a77;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.president-login-benefits {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.president-login-benefits p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  color: #514554;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.president-login-benefits p span {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e8dce8;
+  color: #63385f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.president-welcome-note {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid #e7dfe4;
+  color: #725b71;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.president-welcome-note span {
+  color: #a16a8e;
+  font-size: 20px;
+}
+
+.president-login-card {
+  min-width: 0;
+  padding: 38px 36px 27px;
+  border: 1px solid #eee6ed;
+  border-radius: 19px;
+  background: #ffffff;
+  box-shadow: 0 18px 55px #39233b0c;
+}
+
+.president-card-label {
+  margin-bottom: 12px;
+  color: #986588;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.president-login-card h2 {
+  margin: 0 0 9px;
+  color: #35243c;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.president-login-description {
+  margin: 0 0 28px;
+  color: #847987;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.president-login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.president-login-card label {
+  margin-bottom: 9px;
+  color: #44374a;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.president-login-card input {
+  width: 100%;
+  min-width: 0;
+  height: 49px;
+  padding: 0 14px;
+  border: 1px solid #e5dce5;
+  border-radius: 9px;
+  background: #fdfcfd;
+  color: #33263a;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.president-login-card input::placeholder {
+  color: #aaa0ac;
+}
+
+.president-login-card input:focus {
+  border-color: #86527f;
+  box-shadow: 0 0 0 3px #86527f15;
+}
+
+.president-login-card form > input {
+  margin-bottom: 22px;
+}
+
+.president-password-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.president-password-label-row label {
+  margin: 0;
+}
+
+.president-text-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #804b78;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.president-text-button:hover {
+  color: #ad648d;
+  text-decoration: underline;
+}
+
+.president-password-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.president-password-input-wrap input {
+  padding-right: 65px;
+}
+
+.president-password-toggle {
+  position: absolute;
+  right: 12px;
+  padding: 5px 0 5px 5px;
+  border: none;
+  background: transparent;
+  color: #804b78;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.president-login-button {
+  width: 100%;
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #572c53;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.president-login-button:hover {
+  background: #6d3967;
+  transform: translateY(-1px);
+}
+
+.president-login-button span {
+  font-size: 18px;
+}
+
+.president-login-message {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.president-login-message.info {
+  border: 1px solid #ded2ed;
+  background: #f6f1fb;
+  color: #614276;
+}
+
+.president-login-message.error {
+  border: 1px solid #f0caca;
+  background: #fff3f2;
+  color: #a12d35;
+}
+
+.president-login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 27px 0 20px;
+  color: #a298a4;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 1.1px;
+  white-space: nowrap;
+}
+
+.president-login-divider span:first-child,
+.president-login-divider span:last-child {
+  height: 1px;
+  flex: 1;
+  background: #eee7ed;
+}
+
+.president-login-register {
+  margin: 0;
+  color: #7d7280;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.president-login-register a {
+  color: #75436e;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.president-login-register a:hover {
+  color: #ad648d;
+  text-decoration: underline;
+}
+
+.president-login-home {
+  display: block;
+  width: fit-content;
+  margin: 25px auto 0;
+  color: #76677a;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.president-login-home:hover {
+  color: #572c53;
+}
+
+.president-login-security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding-top: 17px;
+  border-top: 1px solid #f0eaf0;
+  color: #9a8e9d;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.president-login-security span {
+  color: #80577b;
+  font-size: 17px;
+}
+
+.president-back-login {
+  display: block;
+  margin: 24px auto 0;
+  font-size: 13px;
+}
+
+.president-login-footer {
+  padding: 20px 6%;
+  border-top: 1px solid #eee7ec;
+  background: #ffffff;
+  color: #8b7f8d;
+  text-align: center;
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+  .president-login-container {
+    width: min(560px, 90%);
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin: 30px auto;
+  }
+
+  .president-login-welcome {
+    padding: 10px 0;
+  }
+
+  .president-login-icon {
+    margin: 20px 0;
+  }
+
+  .president-login-welcome h1 {
+    max-width: 550px;
+    font-size: 34px;
+  }
+
+  .president-welcome-note {
+    margin-top: 24px;
+  }
+
+  .president-login-card {
+    padding: 30px 25px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .president-login-header {
+    min-height: 72px;
+    padding: 14px 5%;
+  }
+
+  .president-login-logo {
+    gap: 8px;
+    font-size: 21px;
+  }
+
+  .president-logo-mark {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+  }
+
+  .president-language-select {
+    min-width: 98px;
+    padding: 9px 7px;
+    font-size: 12px;
+  }
+
+  .president-login-container {
+    width: 90%;
+    margin: 22px auto;
+  }
+
+  .president-login-welcome h1 {
+    font-size: 30px;
+  }
+
+  .president-welcome-description {
+    font-size: 14px;
+  }
+
+  .president-login-card {
+    padding: 27px 20px 23px;
+    border-radius: 15px;
+  }
+
+  .president-login-card h2 {
+    font-size: 24px;
+  }
+
+  .president-login-footer {
+    padding: 17px 12px;
+    line-height: 1.8;
+  }
+}
